@@ -52,7 +52,7 @@ Needless to say, we should also assign `instance_port` as the port number which 
 
 You should say a new instance named `MYAPPLICATION` on Eureka if success.
 
-To automatically register the server to Eureka, one can put the code into [manage.py](./manage.py) like the demo did. Be sure to run it before `main` function in [manage.py](./manage.py). You can also refer to [commit 610965d](./commit/610965d) in this repository.
+To automatically register the server to Eureka, one can put the code into [manage.py](./manage.py) like the demo did. Be sure to run it before `main` function in [manage.py](./manage.py). You can also refer to commit `610965db` in this repository.
 
 [py-eureka-client]: https://github.com/keijack/python-eureka-client/
 
