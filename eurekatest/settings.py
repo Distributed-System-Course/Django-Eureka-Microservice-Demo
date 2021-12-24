@@ -25,12 +25,18 @@ SECRET_KEY = 'django-insecure-4yvtbo-hq2=cqp)yws@ntt)()(2janqc=m1ee!!&ti7f1s!^9h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 当 Django 运行在以下的 HOST NAME 时允许被访问
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    '10.151.102.74',
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'services',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
