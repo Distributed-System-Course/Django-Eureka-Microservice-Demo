@@ -10,10 +10,10 @@ def eureka_init():
     # 将目前的服务器注册到 Eureka 服务器
     eureka_client.init(
         # Eureka Server 所在的地址
-        eureka_server="http://10.151.102.74:8761",
+        eureka_server="http://localhost:8761",
         app_name="MyApplication",
         # instance_host 不填则自动取得当前机器在网络上的一个 IP 地址
-        instance_host="10.151.102.74",
+        instance_host="localhost",
         instance_port=8000,
     )
 
