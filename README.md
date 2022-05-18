@@ -1,6 +1,6 @@
 # Python Django Eureka Microservice
 
-This repo tries demostrating the process of registering django services into a Eureka server, with the help of [Python Eureka Client][py-eureka-client].
+This repository tries demonstrating the process of registering django services into a Eureka server, with the help of [Python Eureka Client][py-eureka-client].
 
 [查看简体中文 README](./README.zh-Hans.md)
 
