@@ -2,6 +2,8 @@
 
 This repo tries demostrating the process of registering django services into a Eureka server, with the help of [Python Eureka Client][py-eureka-client].
 
+[查看简体中文 README](./README.zh-Hans.md)
+
 ## Steps
 
 ### Get Eureka server running
@@ -16,7 +18,7 @@ Then you can build and run this Spring Boot project. And you should be able to v
 
 ### Start a Django Project
 
-Then you should have a ruuning Django site, which should be able to handle some HTTP requests.
+Then you should have a running Django site, which should be able to handle some HTTP requests.
 
 Request from other machines should be able to access this Django site. That means if you are using Django's development server, you should add your host name to `ALLOWED_HOSTS` in `settings.py`, and run server with command like:
 
@@ -44,7 +46,7 @@ eureka_client.init(
 )
 ```
 
-Argument `app_name` is used to identify a app on Eureka server, which means we can refer to this server (or simmilar server instances, if any) by this name. In this demo, the name is `MyApplication`.
+Argument `app_name` is used to identify a app on Eureka server, which means we can refer to this server (or similar server instances, if any) by this name. In this demo, the name is `MyApplication`.
 
 It is necessary to assign `instance_host` as the IP address by which other machines can find this server. Otherwise, the program would find any available IP address of the current machine among all the network adapters to which it has connected to.
 
